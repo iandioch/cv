@@ -19,82 +19,85 @@
 
 \usepackage{tabularx}
 
-% enable customized headers and footers
 \pagestyle{scrheadings}
 
 \newcommand{\nasc}[2]{\href{#1}{\color{blue}\setulcolor{blue}\ul{#2}}}
 \newcommand{\rawnasc}[1]{\nasc{#1}{#1}}
 
-\newcommand{\bearna}[0]{\vspace{3mm}\\}
+\newcommand{\bearna}[0]{\vspace{2.25mm}\\}
 \newcommand{\fmtdate}[1]{\textit{#1}}
 \newcommand{\fmtaddress}[1]{\textit{#1}}
 \newcommand{\fmtjobtitle}[1]{\textbf{#1}}
+\newcommand{\fmtblurb}[1]{\textit{#1}}
+\newcommand{\fmtskill}[1]{\textbf{#1}}
+\newcommand{\fmtcompetition}[1]{\textbf{#1}}
 
 \begin{document}
  
 \begin{center}
 \textsc{\Huge{Noah Ó Donnaile}}
 \bearna
-Homepage: \rawnasc{https://noah.needs.money}\\Blog: \rawnasc{https://mycode.doesnot.run}\\
-Email: \nasc{mailto:iandioch11+cv@gmail.com}{iandioch11@gmail.com}\\
+\rawnasc{https://noah.needs.money} - 
+\nasc{mailto:iandioch11+cv@gmail.com}{iandioch11@gmail.com}\\
 \end{center}
 
 % part 4 = https://web.archive.org/web/20120101153859/http://stefano.italians.nl:80/archives/date/2008/10
 \section{Experience}
-\fmtjobtitle{Software Engineering Intern - Google Trips\hfill Google Zürich}\\
+\fmtjobtitle{Software Engineering Intern\hfill Google Zürich}\\
 \fmtdate{June 2017 -- May 2018}\hfill\fmtaddress{Zürich, Switzerland}\\
-Added Spotlight Search integration and "view search history" feature to the Google Trips iOS app in Objective C, with Mercurial.
+Added Spotlight Search integration and ``view search history" feature to the Google Trips iOS app in \fmtskill{Objective C} (with \fmtskill{UIKit}, \fmtskill{XCTest}, \fmtskill{OCMock}), with \fmtskill{Mercurial}.
 \bearna
 \fmtjobtitle{Summer Trainee Engineering Programme (STEP) Intern\hfill Google Zürich}\\
 \fmtdate{July 2016 -- September 2016}\hfill\fmtaddress{Zürich, Switzerland}\\
-On the Video Ads Engineering Productivity team, working on a project to reduce dependency bloat by splitting large libraries into smaller ones programmatically. Used Java (+ Guice), Python (+ Flask), Javascript, with Piper.
+Worked on the Video Ads Engineering Productivity team on a project to reduce dependency bloat by splitting large disjoint libraries into small ones. Used \fmtskill{Java} (with \fmtskill{Guice}), \fmtskill{Python} (with \fmtskill{Flask}), \fmtskill{Javascript}, with \fmtskill{Piper}.
 \bearna
 \fmtjobtitle{Java Developer\hfill Opening.io}\\
 \fmtdate{July 2015 -- August 2015}\hfill\fmtaddress{Dublin, Ireland}\\
-Built linear regression model using the SMILE library to predict a user’s salary based on their résumé. Used elasticsearch percolation to find an applicant's universit(ies) from their résumé. Worked in Java with Gearman, Elasticsearch, Couchbase, git.
+Trained \fmtskill{linear regression} model using the \fmtskill{SMILE} library to predict a user’s salary based on their résumé. Wrote a tool to parse an applicant's education from their résumé with an \fmtskill{Elasticsearch percolator}. Worked in \fmtskill{Java} with \fmtskill{Gearman}, \fmtskill{Elasticsearch}, \fmtskill{Couchbase}, \fmtskill{git}.
 \bearna
 \newcolumntype{D}{>{\raggedleft\arraybackslash}p{.265\linewidth}}
 %TODO: reorder rows, perhaps do TITLE DATE COMPANY column order too
-\begin{tabularx}{\columnwidth}{@{}p{.25\linewidth}XD@{}}
-\fmtjobtitle{Teaching Assistant}&CA117: Computer Programming II, DCU&January 2017 -- May 2017\\
-\fmtjobtitle{Chairperson}&Redbrick, DCU’s Computing \& Networking Society&April 2016 -- April 2017\\
-\fmtjobtitle{Teaching Assistant}&CA116: Computer Programming I, DCU&October 2016 -- December 2016\\
-\fmtjobtitle{Secretary}&Redbrick, DCU’s Computing \& Networking Society&April 2015 -- April 2016\\
-\fmtjobtitle{ComputeTY Assistant}&ComputeTY, DCU&January 2016\\
-\fmtjobtitle{Private Tutor}&CA117, in aid of Childline, through 100minds&January 2016 -- May 2016
+\begin{tabularx}{\columnwidth}{@{}p{.2\linewidth}XD@{}}
+\fmtjobtitle{Teaching Assistant}&CA117: Computer Programming II (\fmtskill{Python}), DCU&\fmtdate{January 2017 -- May 2017}\\
+\fmtjobtitle{Chairperson}&Redbrick Computing \& Networking Society, DCU&\fmtdate{April 2016 -- April 2017}\\
+\fmtjobtitle{Teaching Assistant}&CA116: Computer Programming I (\fmtskill{Python}), DCU&\fmtdate{October 2016 -- December 2016}\\
+\fmtjobtitle{Secretary}&Redbrick Computing \& Networking Society, DCU &\fmtdate{April 2015 -- April 2016}\\
+\fmtjobtitle{Teaching Assistant}&ComputeTY (\fmtskill{Java}), DCU&\fmtdate{January 2016}\\
+\fmtjobtitle{Private Tutor}&CA117 (\fmtskill{Python}), \nasc{https://www.100minds.org/campaigns/2016/participants/noah-donnelly}{in aid of Childline, through 100minds}&\fmtdate{January 2016 -- May 2016}
 \end{tabularx}
 \section{Education}
-\fmtjobtitle{BSc. in Computational Problem Solving \& Software Development}\hfill\fmtaddress{Dublin City University}\\
-September 2015 -- June 2019\hfill Dublin, Ireland\\
-CPSSD is a 4-year degree for people with prior programming experience; read more at \nasc{https://cpssd.net}{the site I created for it}.\\
-I won an All-Ireland Scholarship and a DCU Academic Scholarship as a result of getting 605 points in the Leaving
-Certificate (top 1.2\% nationally). On track to graduate with 1st class honours.
+\fmtjobtitle{BSc. in Computational Problem Solving \& Software Development\hfill Dublin City University}\\
+\fmtdate{September 2015 -- June 2019}\hfill\fmtaddress{Dublin, Ireland}\\
+CPSSD is a 4-year degree for people with prior programming experience; read more at \nasc{https://cpssd.net}{the course site I created}.\\
+Earned an \fmtskill{All-Ireland Scholarship} and a \fmtskill{DCU Academic Scholarship} as a result of obtaining \fmtskill{605 points} in the Leaving
+Certificate (\fmtskill{top 1.2\%} nationally). On track to graduate with 1st class honours.
 \section{Projects}
-\fmtjobtitle{\nasc{http://safer.place}{safer.place}\hfill Hackathon Project}\\
-Website to estimate a location’s safety by using government-provided crime data\\
-Built basic app framework (Python, flask, jinja2), frontend (Tachyons CSS), did data cleanup (Python). Wrote Irish language
-translation. Project shortlisted for the DCU President’s Prize for Innovation 2017.
+\fmtjobtitle{safer.place\hfill HackYourWayDay 2017 Hackathon}\\
+\fmtblurb{\nasc{http://safer.place}{safer.place} is a website to estimate an Irish address’ safety based on government-provided crime data}\\
+Wrote webserver (\fmtskill{Python}, \fmtskill{Flask}, \fmtskill{jinja2}), frontend (\fmtskill{HTML}, \fmtskill{Tachyons CSS}), did data cleanup (\fmtskill{Python}). Wrote \fmtskill{Irish language
+translation}. Shortlisted for the \fmtskill{DCU President’s Prize for Innovation 2017}. Team of 2.
 \bearna
 \fmtjobtitle{Dipla\hfill 2nd Year University Project}\\
-Distributed computing library for Python 3.5+\\
-Built websocket communications (asyncio, websockets), a directory server (flask) a status page (ReactJS, chart.js, Jinja2),
-some task queue functionality, and transmission of executables to workers. Team of 4, Scrum, 7 months.
+\fmtblurb{An RPC and distributed computing framework for Python 3.5+}\\
+Wrote websocket communications, task queue, transmission of logic to nodes (\fmtskill{Python}, \fmtskill{asyncio}, \fmtskill{websockets}), directory server (\fmtskill{Python}, \fmtskill{Flask}), status page (\fmtskill{Javascript}, \fmtskill{ReactJS}, \fmtskill{chart.js}, \fmtskill{jinja2}). Team of 4, \fmtskill{Scrum}, 7 months.
 \bearna
 \fmtjobtitle{Feedlark\hfill 1st Year University Project}\\
-RSS aggregator prioritising articles on topics you have previously liked\\
-Designed and implemented microservices architecture (Gearman), topic modelling (Python, spaCy), machine learning
-(Python, Scikit-Learn), and database interactions (Go, MongoDB). Team of 5, Scrum, 3 months.
+\fmtblurb{\nasc{https://cpssd.net/feedlark}{Feedlark} is a web-based RSS aggregator that promotes items matching topics the user previously liked}\\
+Designed and implemented \fmtskill{microservices architecture} (\fmtskill{Gearman}), \fmtskill{topic modelling} (\fmtskill{Python}, \fmtskill{spaCy}), \fmtskill{machine learning}
+(\fmtskill{Python}, \fmtskill{Scikit-Learn}), and database interactions (\fmtskill{Go}, \fmtskill{MongoDB}). Team of 5, \fmtskill{Scrum}, 3 months.
 \section{Programming Competitions}
-\newcolumntype{T}{>{\raggedleft\arraybackslash}p{.37\linewidth}}
-\begin{tabularx}{\columnwidth}{@{}XT@{}}
-\textbf{ICPC Northwestern Europe Regional Contest (NWERC) 2017}&1st Irish team, 47th overall. Team of 3.\\
-\textbf{Irish Collegiate Programming Contest (IrlCPC) 2017}&3rd place. Team of 3.\\
-\textbf{Google Hash Code 2017}&1st Irish team, 164th globally. Team of 2.\\
-\textbf{ICPC Northwestern Europe Regional Contest (NWERC) 2016}&2nd Irish team, 78th overall. Team of 2.\\
-\textbf{Irish Collegiate Programming Contest (IrlCPC) 2016}&2nd place. Team of 3.\\
-\textbf{Google Hash Code 2016}&2nd Irish team, 120th globally. Team of 3.\\
-\textbf{ICPC Northwestern Europe Regional Contest (NWERC) 2015}&1st Irish team, 74th overall. Team of 3.\\
-\textbf{International Olympiad in Informatics 2015, Kazakhstan}&On Irish team. Solo.\\
-\textbf{Google Call to Code 2014}&6th overall. Solo.
+\newcolumntype{T}{>{\raggedleft\arraybackslash}p{.26\linewidth}}
+\newcolumntype{P}{>{\raggedleft\arraybackslash}p{.0875\linewidth}}
+\begin{tabularx}{\columnwidth}{@{}XTP@{}}
+\fmtcompetition{Irish Collegiate Programming Contest (IrlCPC) 2018}&1st place&Team of 3\\
+\fmtcompetition{ICPC Northwestern Europe Regional Contest (NWERC) 2017}&1st Irish team, 47th overall&Team of 3\\
+\fmtcompetition{Irish Collegiate Programming Contest (IrlCPC) 2017}&3rd place&Team of 3\\
+\fmtcompetition{Google Hash Code 2017}&1st Irish team, 164th globally&Team of 2\\
+\fmtcompetition{ICPC Northwestern Europe Regional Contest (NWERC) 2016}&2nd Irish team, 78th overall&Team of 2\\
+\fmtcompetition{Irish Collegiate Programming Contest (IrlCPC) 2016}&2nd place&Team of 3\\
+\fmtcompetition{Google Hash Code 2016}&2nd Irish team, 120th globally&Team of 3\\
+\fmtcompetition{ICPC Northwestern Europe Regional Contest (NWERC) 2015}&1st Irish team, 74th overall&Team of 3\\
+\fmtcompetition{International Olympiad in Informatics 2015, Kazakhstan}&On Irish team&Solo\\
+\fmtcompetition{Google Call to Code 2014}&6th overall&Solo
 \end{tabularx}
 \end{document}
