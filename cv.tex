@@ -8,7 +8,7 @@
     urlcolor=blue
 }
 
-\usepackage[top=1.3cm, bottom=0.8cm, left=1.7cm, right=1.7cm]{geometry}
+\usepackage[top=1.55cm, bottom=0.9cm, left=2.3cm, right=2.3cm]{geometry}
 \usepackage{soul}
 \usepackage{titlesec}
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -39,29 +39,29 @@
 \textsc{\Huge{Noah Ó Donnaile}}&
 {\begin{tabularx}{\linewidth}{@{}@{}>{\raggedleft}X@{}}
 \rawnasc{https://noah.needs.money}\\
-\nasc{mailto:iandioch11+cv@gmail.com}{iandioch11@gmail.com}\\
-\rawnasc{https://github.com/iandioch}
+\rawnasc{https://github.com/iandioch}\\
+\textit{\nasc{mailto:iandioch11+cv@gmail.com}{iandioch11@gmail.com}}
 \end{tabularx}}
 \end{tabularx}
 \vspace{-2em}
 
 % part 4 = https://web.archive.org/web/20120101153859/http://stefano.italians.nl:80/archives/date/2008/10
 \section{Experience}
-\fmtjobtitle{Intern in Tools \& Resources for Irish Language Technology\hfill ADAPT Research Centre DCU}\\
+\fmtjobtitle{Intern in Tools \& Resources for Irish Language Technology\hfill ADAPT Research Centre}\\
 \fmtdate{June 2018 -- July 2018}\hfill\fmtaddress{Dublin, Ireland}\\
-Extracted website and PDF text, cleaned up data with \fmtskill{Python}, and aligned text with \fmtskill{Hunalign}. \nasc{http://mycode.doesnot.run/2018/08/15/yes-no/}{Built a tool to analyse yes/no questions in Irish}, a language without words for "yes" or "no", for a SMT system.
+Cleaned text with \fmtskill{Python}, aligned with \fmtskill{Hunalign}. Extracted Irish multi-word expressions from corpora. \nasc{http://mycode.doesnot.run/2018/08/15/yes-no/}{Created tool to process yes/no questions in Irish} (which lacks words for "yes" \& "no") for a SMT system.
 \bearna
 \fmtjobtitle{Software Engineering Intern - Google Trips\hfill Google Zürich}\\
 \fmtdate{June 2017 -- May 2018}\hfill\fmtaddress{Zürich, Switzerland}\\
-Added Spotlight Search integration, ``view search history" feature, and granular notifications to the Google Trips iOS app in \fmtskill{Objective C} (with \fmtskill{UIKit}, \fmtskill{XCTest}, \fmtskill{OCMock}), with \fmtskill{Mercurial}.
+Added Spotlight Search integration, ``view search history" feature, and granular notifications to the Google Trips iOS app in \fmtskill{Objective C} (+ \fmtskill{UIKit}, \fmtskill{XCTest}, \fmtskill{OCMock}), with \fmtskill{Mercurial}.
 \bearna
 \fmtjobtitle{STEP Intern\hfill Google Zürich}\\
 \fmtdate{July 2016 -- September 2016}\hfill\fmtaddress{Zürich, Switzerland}\\
-Worked on the Video Ads Engineering Productivity team on a project to reduce dependency bloat by splitting large disjoint libraries into small ones. Used \fmtskill{Java} (with \fmtskill{Guice}), \fmtskill{Python} (with \fmtskill{Flask}), \fmtskill{Javascript}, with \fmtskill{Piper}.
+Worked on the Video Ads Eng. Prod. team on a tool to reduce dependency bloat by splitting large disjoint libraries into small ones. Worked in \fmtskill{Java} (+ \fmtskill{Guice}), \fmtskill{Python} (+ \fmtskill{Flask}), \fmtskill{Javascript}, with \fmtskill{Piper}.
 \bearna
 \fmtjobtitle{Java Developer\hfill Opening.io}\\
 \fmtdate{July 2015 -- August 2015}\hfill\fmtaddress{Dublin, Ireland}\\
-Trained \fmtskill{linear regression} model using the \fmtskill{SMILE} library to predict a user’s salary based on their résumé. Wrote a tool to parse an applicant's education from their résumé with an \fmtskill{Elasticsearch percolator}. Worked in \fmtskill{Java} with \fmtskill{Gearman}, \fmtskill{Elasticsearch}, \fmtskill{Couchbase}, \fmtskill{git}.
+Developed \fmtskill{Java} tools to predict a person's salary from their résumé (with \nasc{https://github.com/haifengl/smile}{SMILE} linear regression), and to extract their education information from it (with \fmtskill{Elasticsearch}). Used \fmtskill{Gearman}, \fmtskill{Couchbase}, \fmtskill{git}.
 \if false
 \bearna
 \newcolumntype{D}{>{\raggedleft\arraybackslash}p{.265\linewidth}}
@@ -77,46 +77,47 @@ Trained \fmtskill{linear regression} model using the \fmtskill{SMILE} library to
 \fi
 
 \section{Projects}
-\fmtjobtitle{Dipla\hfill University Project}. 7 months, team of 4.\\
+\fmtjobtitle{Dipla\hfill University Project}. 2016 - 2017, 7 months, team of 4\\
 \fmtblurb{\nasc{https://cpssd.net/project/dipla/}{Dipla} is an RPC and distributed computing framework for Python 3.5+}\\
-Wrote websocket communications, task queue, transmission of logic to nodes (\fmtskill{Python}, \fmtskill{asyncio}, \fmtskill{websockets}), directory server (\fmtskill{Python}, \fmtskill{Flask}), status page (\fmtskill{Javascript}, \fmtskill{ReactJS}, \fmtskill{chart.js}, \fmtskill{jinja2}).
+Wrote websocket communications, task queue, transmission of logic to workers (\fmtskill{Python}, \fmtskill{asyncio}, \fmtskill{websockets}), directory server (\fmtskill{Python}, \fmtskill{Flask}), status page (\fmtskill{Javascript}, \fmtskill{ReactJS}, \fmtskill{chart.js}, \fmtskill{jinja2}).
 \bearna
 \fmtjobtitle{safer.place\hfill HackYourWayDay 2017 Hackathon}. Team of 2\\
 \fmtblurb{\nasc{http://safer.place}{safer.place} is a website to estimate an Irish address’ safety based on government-provided crime data}\\
-Wrote webserver (\fmtskill{Python}, \fmtskill{Flask}, \fmtskill{jinja2}), frontend (\fmtskill{HTML}, \fmtskill{Tachyons CSS}), did data cleanup (\fmtskill{Python}). Wrote Irish language
-translation. Shortlisted for the \fmtskill{DCU President’s Prize for Innovation 2017}.
+Wrote webserver (\fmtskill{Python}, \fmtskill{Flask}, \fmtskill{jinja2}), frontend (\fmtskill{HTML}, \fmtskill{Tachyons CSS}), did data cleanup (\fmtskill{Python}). Translated into Irish. Shortlisted for the \fmtskill{DCU President’s Prize for Innovation 2017}.
 \bearna
-\fmtjobtitle{Feedlark\hfill University Project}. 3 months, team of 5\\
+\fmtjobtitle{Feedlark\hfill University Project}. 2016, 3 months, team of 5\\
 \fmtblurb{Web-based RSS aggregator that promotes items matching topics the user previously liked}\\
-Designed and implemented \fmtskill{microservices architecture} (\fmtskill{Gearman}), \fmtskill{topic modelling} (\fmtskill{Python}, \fmtskill{spaCy}), \fmtskill{machine learning}
-(\fmtskill{Python}, \fmtskill{Scikit-Learn}), and database interactions (\fmtskill{Go}, \fmtskill{MongoDB}).
+Designed and built microservices architecture (\fmtskill{Gearman}), topic modelling (\fmtskill{Python}, \fmtskill{spaCy}), ML recommender system
+(\fmtskill{Python}, \fmtskill{Scikit-Learn}), and database service (\fmtskill{Go}, \fmtskill{MongoDB}).
 \section{Competitive Programming}
-I enjoy taking part in programming competitions, and practising for them.\\
-I am one of the top 100 users on Kattis Online Judge, and am in the 20 highest ranked Irish users (top 0.66\% of all users) on Project Euler. I have had the following results in various competitions:
+I am one of the \nasc{https://open.kattis.com/users/iandioch}{top 100 users on Kattis Online Judge}, and am in the 20 highest ranked Irish users (\fmtskill{top 0.66\%} of all users) on Project Euler. I have had the following results in programming competitions:
 \bearna
 \newcolumntype{T}{>{\raggedleft\arraybackslash}p{.25\linewidth}}
 \newcolumntype{P}{>{\raggedleft\arraybackslash}p{.0875\linewidth}}
+\small{}
 \begin{tabularx}{\columnwidth}{@{}X|X@{}}
-\fmtcompetition{Student Battle Dev Season 11}\hfill\nasc{http://mycode.doesnot.run/2018/03/28/student-battle-dev-season-11/}{41st place}& 
-\fmtcompetition{IrlCPC 2018}\hfill\nasc{http://mycode.doesnot.run/2018/03/11/irlcpc-2018/}{1st place}\\
-\fmtcompetition{ICPC NWERC 2017}\hfill\nasc{http://www.computing.dcu.ie/news/dcu-computing-teams-compete-european-stage}{47th, 1st Irish team}&
-\fmtcompetition{UKIEPC 2017}\hfill\nasc{https://www.computing.dcu.ie/news/dcu-clinch-top-3-spots-irish-end-ukiepc-2017}{3rd Irish team}\\
-\fmtcompetition{IrlCPC 2017}\hfill\nasc{http://mycode.doesnot.run/2017/04/03/irlcpc-2017/}{3rd place}&
-\fmtcompetition{Google Hash Code 2017}\hfill\nasc{http://mycode.doesnot.run/2018/01/04/hashcode-2017/}{164th, 1st Irish team}\\%&Team of 2\\
-\fmtcompetition{ICPC NWERC 2016}\hfill 78th, 2nd Irish team&
-\fmtcompetition{IrlCPC 2016}\hfill 2nd place\\%&Team of 3\\
-\fmtcompetition{Google Hash Code 2016}\hfill 120th, 2nd Irish team&
-\fmtcompetition{ICPC NWERC 2015}\hfill 74th, 1st Irish team\\%&Team of 3\\
-\fmtcompetition{IOI 2015, Kazakhstan}\hfill On Irish team&
-\fmtcompetition{Google Call to Code 2014}\hfill 6th place\\%&Solo
+\fmtcompetition{Student Battle Dev Season 11}\hfill\nasc{http://mycode.doesnot.run/2018/03/28/student-battle-dev-season-11/}{41\textsuperscript{st} place}& 
+\fmtcompetition{IrlCPC 2018}\hfill\nasc{http://mycode.doesnot.run/2018/03/11/irlcpc-2018/}{1\textsuperscript{st} place}\\
+\fmtcompetition{ICPC NWERC 2017}\hfill\nasc{http://www.computing.dcu.ie/news/dcu-computing-teams-compete-european-stage}{47\textsuperscript{th} place. 1\textsuperscript{st} Irish team}&
+\fmtcompetition{UKIEPC 2017}\hfill\nasc{https://www.computing.dcu.ie/news/dcu-clinch-top-3-spots-irish-end-ukiepc-2017}{3\textsuperscript{rd} Irish team}\\
+\fmtcompetition{IrlCPC 2017}\hfill\nasc{http://mycode.doesnot.run/2017/04/03/irlcpc-2017/}{3\textsuperscript{rd} place}&
+\fmtcompetition{Google Hash Code 2017}\hfill\nasc{http://mycode.doesnot.run/2018/01/04/hashcode-2017/}{164\textsuperscript{th} place. 1\textsuperscript{st} Irish team}\\%&Team of 2\\
+\fmtcompetition{ICPC NWERC 2016}\hfill 78\textsuperscript{th} place. 2\textsuperscript{nd} Irish team&
+\fmtcompetition{IrlCPC 2016}\hfill 2\textsuperscript{nd} place\\%&Team of 3\\
+\fmtcompetition{Google Hash Code 2016}\hfill 120\textsuperscript{th} place. 2\textsuperscript{nd} Irish team&
+\fmtcompetition{ICPC NWERC 2015}\hfill 74\textsuperscript{th} place. 1\textsuperscript{st} Irish team\\%&Team of 3\\
+\fmtcompetition{IOI 2015, Kazakhstan}\hfill \nasc{https://www.computing.dcu.ie/news/irelands-best-young-computer-programmers-win-trip-compete-olympics-programming}{Represented Ireland}&
+\fmtcompetition{Google Call to Code 2014}\hfill 6\textsuperscript{th} place\\%&Solo
 \end{tabularx}
+\normalsize{}
 \section{Education}
 \fmtjobtitle{BSc. in Computational Problem Solving \& Software Development\hfill Dublin City University}\\
 \fmtdate{September 2015 -- June 2019}\hfill\fmtaddress{Dublin, Ireland}\\
-CPSSD is a 4-year degree for people with prior programming experience; read more at \nasc{https://cpssd.net}{the course site I created}.\\
+CPSSD is a degree aimed at students with prior CS experience. Read more at \nasc{https://cpssd.net}{the course site I created}.
+\bearna
 - 3rd year spent on placement at Google Zürich.\\
-- 88\% average grade in 2nd year (2nd in class ranking).\\
-- 84\% average grade in 1st year (3rd in class ranking).\\
-Earned an \fmtskill{All-Ireland Scholarship} and a \fmtskill{DCU Academic Scholarship} as a result of obtaining \fmtskill{605 points} (\fmtskill{top 1.2\%} nationally) in the Leaving
-Certificate in secondary school.
+- \fmtskill{88\% average grade} in 2\textsuperscript{nd} year (2\textsuperscript{nd} in class ranking). \fmtskill{Chairperson} of computing society.\\
+- \fmtskill{84\% average grade} in 1\textsuperscript{st} year (3\textsuperscript{rd} in class ranking). \fmtskill{Secretary} of computing society.
+\bearna
+Earned an \fmtskill{All-Ireland Scholarship} and a \fmtskill{DCU Academic Scholarship} as a result of obtaining 605 points (of 625 maximum; \fmtskill{top 1.2\%} nationally) in the Leaving Certificate in secondary school.
 \end{document}
